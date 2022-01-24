@@ -1,0 +1,287 @@
+* {
+	margin: 0;
+	padding: 0; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background: url(../img/fondo.jpg);
+	background-color: rgba(168, 157, 123, .7);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+/*Contenedor*/
+.contenedor {
+	width: 100%;
+	margin: auto;
+}
+/*Header*/
+header {
+	background: rgba(0, 0, 0, .7);
+}
+header .logo-header{
+	width: 90%;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo-header img{
+	width: 150px;
+}
+header .logo-header .carrito{
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+	margin-right: 20px;
+}
+header nav {
+	background: black;
+	box-sizing: border-box;
+	width: 100%;
+	margin: auto;
+	/*Flex*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+header nav a {
+	font-size: 20px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	/*Flex*/
+	flex-grow: 1;
+}
+header nav a:hover{
+	background: #474747;
+}
+/*Inicio de Sesión*/
+header .logo-header .derecha .iniciar_sesion{
+	padding: 5px 10px;
+	color: #fff;
+	margin-right: 20px;
+	cursor: pointer;
+}
+/*Registro*/
+#register{
+	display: flex;
+	width: 90%;
+	margin: 10px auto;
+}
+#register .registro{
+	background: rgba(255, 255, 255, .5);
+	display: flex;
+	flex-basis: 100%;
+	flex-flow: column wrap;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+#register h3 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#register h4{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/*Relleno*/
+
+#register .registro .formulario {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow: auto;
+}
+
+#register .registro .formulario form {
+	margin: auto;
+}
+
+
+#register .registro .formulario form .caja {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 20px;
+	justify-content: center;
+	text-align: center;
+}
+#register .registro .formulario form .caja div{
+	flex: 1 1 100%;
+	margin: 10px;
+}
+#register .registro .formulario form .caja div input{
+	height:40px;
+	width: 200px;
+	margin: 20px;
+}
+#register .registro .formulario form .botones{
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#register .registro .formulario form .botones input{
+	height: 30px;
+	margin: 0px 15px;
+}
+
+/*Ventana emergente*/
+.overlay{
+	background: rgba(0, 0, 0, .3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+
+}
+
+.overlay.active{
+	visibility: visible;
+}
+.popup{
+	background: #f8f8f8;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 20px;
+	text-align: center;
+}
+.popup .btn-cerrar-popup{
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	color: #bbbbbb;
+}
+.popup .btn-cerrar-popup:hover{
+	color: #000;
+}
+.popup h3{
+	font-size: 36px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	/*opacity: 0;*/
+}
+.popup h4{
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	/*opacity: 0;*/
+}
+.popup form .contenedor-inputs input{
+	width: 100%;
+	margin-bottom: 20px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid #bbbbbb;
+}
+
+.popup form .btn-submit{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #1A25FF;
+	border-radius: 3px;
+	font-family: 'Open-Sans', sans-serif;
+	cursor: pointer;
+}
+.popup form .btn-submit:hover{
+	background: rgba(24, 24, 146, .9);
+}
+
+/*Footer*/
+#pie{
+	bottom: 0;
+	width: calc(100% - 6px);
+	height: 200px;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.7);
+	border: 2px solid black;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#pie div{
+	margin: 10px 0px;
+}
+#pie .lista a{
+	color: black;
+}
+#pie .logos a{
+	color: #00677e;
+}
+#pie .logos div{
+	justify-content:center;
+	width:40px;
+	height:40px;
+	background: #fff;
+	text-align: center;
+	padding: 10px 0px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 1px dashed black;
+	box-shadow:0 0 0 2px #fff;
+	margin-left: 10px;
+}
+
+
+@media screen and (max-width: 810px){
+	header .logo-header img{
+		width: 130px;
+	}
+	header .logo-header .carrito{
+		font-size: 20px;
+	}
+	.derecha a{
+		padding-right: 15px;
+	}
+	header nav a {
+	font-size: 15px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+	/*Flex*/
+	flex-grow: 1;
+	}
+	/*Formulario de registro*/
+
+	#register h3 {
+		font-size: 23px;
+		text-align: center;
+	}
+
+	#register h4{
+		font-size: 18px;
+		text-align: center;
+	}
+	#register .registro .formulario form .caja div input{
+		height:40px;
+		width: 200px;
+		margin: 3px;
+	}
+}

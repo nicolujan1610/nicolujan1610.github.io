@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos/ropa.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/prefix.js"></script>
+	<title>Atlas - Ropa Online</title>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<div class="logo-header">
+				<a href=""><img src="img/logo4.png"></a>
+				<div class="derecha">
+					<a href="#" class="iniciar_sesion" id="login">Iniciar Sesión</a>
+					<a href="" class="carrito fas fa-shopping-cart"></a>
+				</div>
+			</div>
+			<nav>
+				<a href="index.html">Inicio</a>
+				<a href="mujer_buzos.html">Mujer</a>
+				<a href="hombre_buzos.html">Hombre</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="Register.html">Registrate!</a>
+			</nav>
+		</header>
+		<section id="shop">
+			<div class="tienda">
+			<div class="titulo"><h2>Gorras</h2></div>
+				<div class="productos">
+					<div class="prendas">
+						<div class="img">
+							<img src="ropa/gorra_mujer_1.jpg">
+							<h4>$1400</h4>
+							<a href="">Añadir al carrito</a>
+						</div>						
+					</div>
+						<div class="prendas">
+						<div class="img">
+							<img src="ropa/gorra_mujer_2.jpg">
+							<h4>$1400</h4>
+							<a href="">Añadir al carrito</a>
+						</div>						
+					</div>
+						<div class="prendas">
+						<div class="img">
+							<img src="ropa/gorra_mujer_3.jpg">
+							<h4>$1400</h4>
+							<a href="">Añadir al carrito</a>
+						</div>						
+					</div>
+						<div class="prendas">
+						<div class="img">
+							<img src="ropa/gorra_mujer_4.jpg">
+							<h4>$1400</h4>
+							<a href="">Añadir al carrito</a>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<aside>
+				<h2>Filtros</h2>
+				<div class="cat">
+					<h4>Categorias</h4>
+					<ul>
+						<li><a href="mujer_buzos.html">Buzos</a></li>
+						<li><a href="mujer_camperas.html">Camperas</a></li>
+						<li><a href="mujer_pantalones.html">Pantalones</a></li>
+						<li><a href="mujer_remeras.html">Remeras</a></li>
+						<li><a href="mujer_gorras.html">Gorras</a></li>
+						<li><a href="mujer_calzado.html">Calzado</a></li>
+					</ul>
+				</div>
+				<div class="talle">
+					<h4>Talles</h4>
+					<ul>
+						<li><a href="#">XS</a></li>
+						<li><a href="#">S</a></li>
+						<li><a href="#">M</a></li>
+						<li><a href="#">L</a></li>
+						<li><a href="#">XL</a></li>
+					</ul>
+				</div>
+			</aside>
+		</section>
+		<!-- Footer -->
+	<footer id="pie">
+		<div class="lista">
+			<a href="index.html">Inicio</a><span> |</span>
+			<a href="hombre_buzos.html">Ropa Hombre</a><span> |</span>
+			<a href="mujer_buzos.html">Ropa Mujer</a><span> |</span>
+			<a href="contacto.html">Contacto</a>
+		</div>
+		<div class="logos">
+			<a href="https://www.facebook.com/"><div class="fab fa-facebook-f"></div></a>
+			<a href="https://twitter.com/home"><div class="fab fa-twitter"></div></a>
+			<a href="https://dribbble.com/"><div class="fab fa-dribbble"></div></a>
+			<a href="https://linkedin.com/"><div class="fab fa-linkedin-in"></div></a>
+			<a href="#"><div class="fab fa-google-plus-g"></div></a>		
+		</div>
+		<div class="copyright">
+			<p>Copyright © 2021 ATLAS S.A| Designed By: Tejada and Lujan S.A, All rights reserved.</p>
+		</div> 
+	</footer>
+	</div>
+
+	<!--Ventana emergente de iniciar sesión -->
+	<div class="overlay" id="overlay">
+		<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>Inicia Sesión</h3>
+				<h4><a href="Register.html">o haz click aquí para registrarte</a></h4>
+				<form action="#" method="post">
+					<div class="contenedor-inputs">
+						<input type="email" name="username" placeholder="Correo">
+						<input type="password" name="contraseña" placeholder="Contraseña">
+					</div>
+					<input type="submit" class="btn-submit"name="" value="Iniciar Sesión">
+				</form>
+		</div>
+	</div>
+
+
+	<script src="js/popup.js"></script>
+</body>
+</html>
