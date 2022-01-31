@@ -61,7 +61,7 @@ header nav a {
 header nav a:hover{
 	background: #474747;
 }
-/*Inicio de Sesión*/
+/*Boton de Inicio de Sesión*/
 header .logo-header .derecha .iniciar_sesion{
 	padding: 5px 10px;
 	color: #fff;
@@ -144,8 +144,8 @@ header .logo-header .derecha .iniciar_sesion{
 }
 /*Banner*/
 #banner{
-	margin: auto;
-	width: 100vw;
+	margin: 20px auto 10px auto;
+	width: 90vw;
 	box-sizing: border-box;
 }
 
@@ -162,21 +162,17 @@ header .logo-header .derecha .iniciar_sesion{
 ul.slider{
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 420px;
 }
 
 ul.slider li{
 	position: absolute;
 	left: 0;
 	top: 0;
-	opacity: 0;
 	width: inherit;
 	height: inherit;
-	transition: opacity .5s;
 }
-ul.slider li:first-child{
-	opacity: 1;
-}
+
 #banner .menu{
 	text-align: center;
 	margin: 20px;
