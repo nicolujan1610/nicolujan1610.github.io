@@ -1,7 +1,7 @@
-var btnAbrirPopup = document.getElementById('login'),
-	overlay = document.getElementById('overlay'),
-	popup = document.getElementById('popup'),
-	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+const btnAbrirPopup = document.getElementById('login');
+const overlay = document.getElementById('overlay');
+const popup = document.getElementById('popup');
+const btnCerrarPopup = document.getElementById('btn-cerrar-popup');
 
 btnAbrirPopup.addEventListener('click', function(){
 	overlay.classList.add('active');
@@ -14,9 +14,9 @@ btnCerrarPopup.addEventListener('click',function(){
 })
 
 
-var carritoContainer = document.getElementById('carrito-container'),
-	btnAbrirCarrito = document.getElementById('btn-abrir-carrito'),
-	btnCerrarCarrito = document.getElementById('btn-cerrar-carrito');
+const carritoContainer = document.getElementById('carrito-container');
+const btnAbrirCarrito = document.getElementById('btn-abrir-carrito');
+const btnCerrarCarrito = document.getElementById('btn-cerrar-carrito');
 
 
 btnAbrirCarrito.addEventListener('click', (e)=>{

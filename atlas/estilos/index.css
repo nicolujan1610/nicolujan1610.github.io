@@ -20,17 +20,17 @@ body {
 header {
 	background: rgba(0, 0, 0, .7);
 }
-header .logo-header{
+header .header__logo{
 	width: 90%;
 	display: flex;
 	margin: auto;
 	justify-content: space-between;
 	align-items: center;
 }
-header .logo-header img{
+header .header__logo img{
 	width: 150px;
 }
-header .logo-header .carrito{
+header .header__logo .carrito{
 	font-size: 20px;
 	text-decoration: none;
 	color: #fff;
@@ -62,7 +62,7 @@ header nav a:hover{
 	background: #474747;
 }
 /*Boton de Inicio de Sesión*/
-header .logo-header .derecha .iniciar_sesion{
+header .header__logo .header__login .iniciar_sesion{
 	padding: 5px 10px;
 	color: #fff;
 	margin-right: 20px;
@@ -143,85 +143,76 @@ header .logo-header .derecha .iniciar_sesion{
 	background: rgba(24, 24, 146, .9);
 }
 /*Banner*/
-#banner{
-	margin: 20px auto 10px auto;
+
+.banner{
+	width: auto;
+	margin: 22px auto;
+}
+.banner__contenedor{
+	margin: 4px auto; 
 	width: 90vw;
-	box-sizing: border-box;
-}
-
-#banner ul, #banner li{
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	height:auto;
 
 }
-#banner ul li img{
-	width: 100%;
-	object-fit: cover;
-}
-ul.slider{
+
+.banner__contenedor{
 	position: relative;
-	width: 100%;
-	height: 420px;
 }
 
-ul.slider li{
+.banner__siguiente,
+.banner__anterior{
 	position: absolute;
-	left: 0;
-	top: 0;
-	width: inherit;
-	height: inherit;
-}
-
-#banner .menu{
+	display: block;
+	width: 40px;
+	height: 80px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 50px;
 	text-align: center;
-	margin: 20px;
+	background: none;
+	color: #fff;
+	font-size: 40px;
+}
+.banner__siguiente:hover,
+.banner__anterior:hover{
+	opacity: 100%;
+}
+.banner__anterior {	
+	left: -40px;
+}
+.banner__siguiente {
+	right: -40px;
 }
 
-#banner .menu li{
-	display: inline-block;
-	text-align: center;
-}
-
-#banner .menu li a{
-	display: inline-block;
-	color: white;
-	text-decoration: none;
-	background-color: #00677e;
-	padding: 10px;
+button.glider-dot{
 	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 20px;
-	border-radius: 100%;
-}
-#banner ul.slider li:target{
-	opacity: 1;
+	height: 12px;
 }
 /*Footer*/
-#pie{
+.footer{
 	bottom: 0;
 	width: calc(100% - 6px);
 	height: 200px;
 	margin: auto;
 	background: rgba(255, 255, 255, 0.7);
 	border: 2px solid black;
-	border-radius: 3px;
+	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-#pie div{
+.footer div{
 	margin: 10px 0px;
 }
-#pie .lista a{
+.footer .lista a{
 	color: black;
 }
-#pie .logos a{
+.footer .logos a{
 	color: #00677e;
 }
-#pie .logos div{
+.footer .logos div{
 	justify-content:center;
 	width:40px;
 	height:40px;
@@ -239,76 +230,18 @@ ul.slider li{
 /*Media Query*/
 
 @media screen and (max-width: 1200px){
-	/*Banner*/
-#banner{
-	margin: auto;
-	width: 900px;
-	padding: 20px;
-}
 
-#banner ul, #banner li{
-	margin: 0;
-	padding: 0;
-	list-style: none;
 
-}
-#banner ul li img{
-	width: 100%;
-	object-fit: cover;
-}
-ul.slider{
-	position: relative;
-	width: 900px;
-	height: 300px;
-}
-
-ul.slider li{
-	position: absolute;
-	left: 0;
-	top: 0;
-	opacity: 0;
-	width: inherit;
-	height: inherit;
-	transition: opacity .5s;
-}
-ul.slider li:first-child{
-	opacity: 1;
-}
-#banner .menu{
-	text-align: center;
-	margin: 20px;
-}
-
-#banner .menu li{
-	display: inline-block;
-	text-align: center;
-}
-
-#banner .menu li a{
-	display: inline-block;
-	color: white;
-	text-decoration: none;
-	background-color: #00677e;
-	padding: 10px;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 20px;
-	border-radius: 100%;
-}
-#banner ul.slider li:target{
-	opacity: 1;
-}
 }
 
 @media screen and (max-width: 810px){
-	header .logo-header img{
+	header .header__logo img{
 		width: 130px;
 	}
-	header .logo-header .carrito{
+	header .header__logo .carrito{
 		font-size: 20px;
 	}
-	.derecha a{
+	.header__login a{
 		padding-right: 15px;
 	}
 	header nav a {
@@ -321,68 +254,8 @@ ul.slider li:first-child{
 	/*Flex*/
 	flex-grow: 1;
 	}
-	/*Banner*/
-	#banner{
-		margin: auto;
-		width: 480px;
-		padding: 20px;
-	}
-
-	#banner ul, #banner li{
-		margin: 0;
-		padding: 0;
-		list-style: none;
-
-	}
-	#banner ul li img{
-		width: 100%;
-		object-fit: cover;
-	}
-	ul.slider{
-		position: relative;
-		width: 480px;
-		height: 150px;
-	}
-
-	ul.slider li{
-		position: absolute;
-		left: 0;
-		top: 0;
-		opacity: 0;
-		width: inherit;
-		height: inherit;
-		transition: opacity .5s;
-	}
-	ul.slider li:first-child{
-		opacity: 1;
-	}
-	#banner .menu{
-		text-align: center;
-		margin: 20px;
-	}
-
-	#banner .menu li{
-		display: inline-block;
-		text-align: center;
-	}
-
-	#banner .menu li a{
-		display: inline-block;
-		color: white;
-		text-decoration: none;
-		background-color: #00677e;
-		padding: 10px;
-		width: 10px;
-		height: 10px;
-		line-height: 10px;
-		font-size: 10px;
-		border-radius: 100%;
-	}
-	#banner ul.slider li:target{
-		opacity: 1;
-	}
 	/*Footer*/
-	#pie{
+	.footer{
 		bottom: 0;
 		width: calc(100% - 6px);
 		height: 180px;
@@ -395,16 +268,16 @@ ul.slider li:first-child{
 		justify-content: center;
 		align-items: center;
 	}
-	#pie div{
+	.footer div{
 		margin: 3px 0px;
 	}
-	#pie .lista a{
+	.footer .lista a{
 		color: black;
 	}
-	#pie .logos a{
+	.footer .logos a{
 		color: #00677e;
 	}
-	#pie .logos div{
+	.footer .logos div{
 		justify-content:center;
 		width:40px;
 		height:40px;
@@ -416,67 +289,5 @@ ul.slider li:first-child{
 		border: 1px dashed black;
 		box-shadow:0 0 0 2px #fff;
 		margin-left: 10px;
-	}
-}
-@media (max-width: 450px){
-	/*Banner*/
-	#banner{
-		margin: auto;
-		width: 250px;
-		padding: 20px;
-	}
-
-	#banner ul, #banner li{
-		margin: 0;
-		padding: 0;
-		list-style: none;
-
-	}
-	#banner ul li img{
-		width: 100%;
-		object-fit: cover;
-	}
-	ul.slider{
-		position: relative;
-		width: 250px;
-		height: 100px;
-	}
-
-	ul.slider li{
-		position: absolute;
-		left: 0;
-		top: 0;
-		opacity: 0;
-		width: inherit;
-		height: inherit;
-		transition: opacity .5s;
-	}
-	ul.slider li:first-child{
-		opacity: 1;
-	}
-	#banner .menu{
-		text-align: center;
-		margin: 20px;
-	}
-
-	#banner .menu li{
-		display: inline-block;
-		text-align: center;
-	}
-
-	#banner .menu li a{
-		display: inline-block;
-		color: white;
-		text-decoration: none;
-		background-color: #00677e;
-		padding: 10px;
-		width: 10px;
-		height: 10px;
-		line-height: 10px;
-		font-size: 10px;
-		border-radius: 100%;
-	}
-	#banner ul.slider li:target{
-		opacity: 1;
 	}
 }
