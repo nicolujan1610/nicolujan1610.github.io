@@ -15,9 +15,36 @@ async function getWeather(){
     const data = await response.json();
     return data;
 }
+// Selección de parrafos
+const infoCity = document.getElementById('infoCity');
+const infoTemp = document.getElementById('infoTemp');
+const infoMax = document.getElementById('infoMax');
+const infoMin = document.getElementById('infoMin');
+const infoSens = document.getElementById('infoSens');
+const infoHum = document.getElementById('infoHum');
 
 async function fetchWeather(){
     const dataJson = await getWeather();
-    console.log(dataJson);
+    const temperatura = dataJson.main.temp;
+    const tempMax = dataJson.main.temp_max;
+    const tempMin = dataJson.main.temp_min;
+    const humedad = dataJson.main.humidity;
+    const sensacionTermica = dataJson.main.feels_like;
+   
+    console.log(dataJson)
+    infoCity.innerHTML = "Ciudad: " + dataJson.name + ", " + selectedCountry.value;
+    infoTemp.innerHTML = "Temperatura: " + temperatura + "°";
+    infoMax.innerHTML = "Maxima: " + tempMax + "°";
+    infoMin.innerHTML = "Minima: " + tempMin + "°";
+    infoHum.innerHTML = "Humedad: " + humedad + "%";
+    infoSens.innerHTML = "Sensación Termica: " + sensacionTermica + "°";
+    // document.write("Ciudad: " + dataJson.name +"<br>");
+    // document.write("Temperatura: " + temperatura +"<br>");
+    // document.write("Maxima: " + tempMax +"<br>");
+    // document.write("Minima: " + tempMin +"<br>");
+    // document.write("Sensación Termica: " + sensacionTermica +"<br>");
+    // document.write("Humedad: " + humedad +"% <br>");
 }
+
+
 

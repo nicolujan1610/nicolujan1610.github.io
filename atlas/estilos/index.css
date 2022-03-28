@@ -9,16 +9,22 @@ body {
 	background-color: rgba(168, 157, 123, .7);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 /*Contenedor*/
 .contenedor {
-	width: 100%;
+	max-width: 100vw;
 	margin: auto;
-	min-height: calc(100vh - 200px);
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto auto auto;
 }
 /*Header*/
 header {
+	max-height: 100px;
 	background: rgba(0, 0, 0, .7);
+	margin-bottom: 24px;
 }
 header .header__logo{
 	width: 90%;
@@ -145,15 +151,29 @@ header .header__logo .header__login .iniciar_sesion{
 /*Banner*/
 
 .banner{
-	width: auto;
-	margin: 22px auto;
+	max-width: 100vw;
+	width: 100vw;
+	height: auto;
+	margin: 22px auto 44px auto;
 }
 .banner__contenedor{
 	margin: 4px auto; 
-	width: 90vw;
+	max-width: 90%;
+	width: 90%;
 	height:auto;
-
 }
+
+.banner__lista{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+.banner__lista img{
+	width: 100%;
+	object-fit: cover;
+}
+
 
 .banner__contenedor{
 	position: relative;
@@ -174,30 +194,30 @@ header .header__logo .header__login .iniciar_sesion{
 	color: #fff;
 	font-size: 40px;
 }
-.banner__siguiente:hover,
-.banner__anterior:hover{
-	opacity: 100%;
-}
+
 .banner__anterior {	
-	left: -40px;
+	left: -48px;
 }
+
 .banner__siguiente {
-	right: -40px;
+	right: -48px;
 }
 
 button.glider-dot{
 	width: 20px;
 	height: 12px;
 }
+
+
 /*Footer*/
 .footer{
-	bottom: 0;
-	width: calc(100% - 6px);
+	width: 90%;
 	height: 200px;
-	margin: auto;
+	margin: 0px auto 0px auto;
 	background: rgba(255, 255, 255, 0.7);
-	border: 2px solid black;
+	border: 2px solid rgba(0, 0, 0, .7);
 	border-radius: 4px;
+	justify-self: flex-end;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -254,6 +274,8 @@ button.glider-dot{
 	/*Flex*/
 	flex-grow: 1;
 	}
+
+
 	/*Footer*/
 	.footer{
 		bottom: 0;

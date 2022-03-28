@@ -16,7 +16,7 @@
         <h2>Seleccione su país y ciudad:</h2>
         <form>
             <div>
-                <select name="select" id="countrySelected">
+                <select class="input-pais" name="select" id="countrySelected">
                         <option value="AF">Afganistán</option>
                         <option value="AL">Albania</option>
                         <option value="DE">Alemania</option>
@@ -28,7 +28,7 @@
                         <option value="AN">Antillas Holandesas</option>
                         <option value="SA">Arabia Saudí</option>
                         <option value="DZ">Argelia</option>
-                        <option value="AR">Argentina</option>
+                        <option value="AR" selected>Argentina</option>
                         <option value="AM">Armenia</option>
                         <option value="AW">Aruba</option>
                         <option value="AU">Australia</option>
@@ -81,7 +81,7 @@
                         <option value="AE">Emiratos Árabes Unidos</option>
                         <option value="ER">Eritrea</option>
                         <option value="SI">Eslovenia</option>
-                        <option value="ES" selected>España</option>
+                        <option value="ES">España</option>
                         <option value="US">Estados Unidos</option>
                         <option value="EE">Estonia</option>
                         <option value="ET">Etiopía</option>
@@ -254,7 +254,7 @@
                 </select>    
             </div>
             <div>
-                <input type="text" placeholder="Ciudad" id="citySelected">
+                <input type="text" placeholder="Ciudad" id="citySelected" class="input-ciudad">
             </div>
             <div>
                 <input type="submit" id="btnEnviarCiudad">
@@ -262,7 +262,12 @@
         </form>
     </div>
     <div class="clima" id="infoClima">
-
+        <br> <p id="infoCity"></p><br>
+        <p id="infoTemp"></p><br>
+        <p id="infoMax"></p><br>
+        <p id="infoMin"></p><br>
+        <p id="infoSens"></p><br>
+        <p id="infoHum"></p><br>
     </div>
     <script src="script.js"></script>
 </body>

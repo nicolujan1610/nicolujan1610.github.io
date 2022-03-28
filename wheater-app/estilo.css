@@ -1,8 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
 
 body{
-    background-color:;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.input-pais {
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+
+.input-ciudad {
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
