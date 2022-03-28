@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/energia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Axie Infinity - Energy Count</title>
+</head>
+<body>
+    <h1>Axie Infinity. Energy Count</h1>
+    <div class="calc" id="calcAlign">
+        <div class="flechas_contenedor">
+            <i class="fas fa-arrow-left flechas" id="btnLeftArrow"></i>
+            <i class="fas fa-arrow-right flechas" id="btnRightArrow"></i>
+        </div>
+        <div class="energy">
+            <h2 class="actual_round">Round <b class="actual_round" id="roundCounter">1</b></h2>
+            <div class="energys">
+                <img src="img/energia1.png" alt="energy">
+                <h4 class="actual_energy"><b class="actual_energy" id="energyCounter">3</b>/10</h4>
+            </div>
+            <div>
+                <button id="btnEnergyLess">-energy</button>
+                <button id="btnEnergyPlus">+energy</button>
+            </div>
+            <button id="btnNextRound">Next Round</button>
+        </div>
+        <button id="btnNewGame">New Game</button>
+        <button class="keys" id="btnOpenBinder">Bind Keys</button>
+    </div>
+    <!-- POPUP BINDER KEYS  -->
+    <div class="binder binder-hidden" id="bindKeys">
+        <div class="binder__bind">
+            <i id="btnCerrarBinder" class="fas fa-times"></i>
+            <h2>Bind keys</h2>
+            <div class="binder__button">
+                <p>-energy [<b id="keyBindLessEnergy">ArrowLeft</b>]</p><button id="bindLessEnergy">Bind Key </button>
+            </div>    
+            <div class="binder__button">
+                <p>+energy [<b id="keyBindPlusEnergy">ArrowRight</b>]</p><button id="bindPlusEnergy">Bind Key</button>
+            </div>
+            <div class="binder__button">
+                <p>Next Round [<b id="keyBindNextRound">ArrowUp</b>]</p><button id="bindNextRound">Bind Key</button>
+            </div>
+            <div class="binder__button">
+                <p>New Game [<b id="keyBindNewGame">ArrowDown</b>]</p><button id="bindNewGame">Bind Key</button>
+            </div>
+        </div>
+        <div class="presionar-tecla-hidden" id="pressAnyKeyDiv">
+            <p>Press any key...</p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
