@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cronometro.css">
+    <title>Reloj by NicoDev</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Reloj en Vivo</h1>
+        <nav class="header__navbar">
+            <ul class="navbar__ul">
+                <li><a href="../index.html">Reloj</a></li>
+                <li><a href="cronometro.html">Cronometro</a></li>
+                <li><a href="">Alarmas</a></li>
+                <li><a href="">Hora del mundo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__cronometro-container">
+            <span class="cronometro-span" id="cronometro">00:00:00</span>
+            <div class="cronometro-btns">
+                <button id="btnIniciarCronometro">Iniciar Cronometro</button>
+                <button class="btn-detener-cronometro" id="btnVueltaCronometro">Vuelta Cronometro</button>
+                <button id="btnDetenerCronometro">Detener Cronometro</button>
+            </div>
+            <div class="vueltas-cronometro" id="vueltasCronometro">
+            </div>
+            <button id="btnCleanLaps" class="btn-clean-laps">Limpiar vueltas</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <a class="boton-de-falla">¿Algo esta fallando? Hazmelo saber clickeando aquí</a>
+    </footer>
+    <script src="../js/cronometro2.js"></script>
+
+</body>
+</html>

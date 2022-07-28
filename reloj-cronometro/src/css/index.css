@@ -1,0 +1,172 @@
+:root{
+    --color1: #0c4532;
+    --color2: #3a563f;
+    --color3: #747961;
+    --color4: #a39e8d;
+    --color5: #bfb6a9;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color1);
+    color: var(--color5);
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a{
+    color: var(--color5);
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--color4);
+}
+
+.navbar__ul{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    width: 500px;
+}
+
+/* ------------MAIN------------ */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 110px);
+}
+
+.main *{
+    user-select: none;
+}
+
+.main .reloj-container{
+    border-radius: 9999px;
+    width: 520px;
+    height: 520px;
+    background-color: var(--color5);
+    margin-bottom: 12px;
+}
+
+.main .reloj-circular-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 520px;
+    height: 520px;
+    background-color: inherit;
+    background-image: url(../img/reloj.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9999px;
+}
+
+.main .reloj-circular-container .aguja-hora{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 14px;
+    width: 360px;
+    border-radius: 16px;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.aguja-hora .aguja-hora-mitad{
+    width: 50%;
+    height: 100%;
+    background-color: var(--color1);
+    border-radius: 16px;
+}
+
+.main .reloj-circular-container .aguja-minutos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: center;
+    height: 12px;
+    width: 330px;
+    border-radius: 16px;
+    position: absolute;  
+    transform: rotate(20deg); 
+}
+
+.aguja-minutos .aguja-mts-mitad{
+    width: 50%;
+    height: 12px;
+    background-color: var(--color1);
+    border-radius: 16px;
+}
+
+.main .reloj-circular-container .aguja-segundos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+    width: 300px;
+    border-radius: 16px;
+    position: absolute; 
+    transform: rotate(10deg);
+}
+
+.main .reloj-circular-container .aguja-sg-mitad{
+    width: 50%;
+    height: 8px;
+    background-color: var(--color1);
+    border-radius: 16px;
+}
+
+.main .reloj-circular-container .centro-agujas{
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 999px;
+    z-index: 1000;
+}
+
+.main .fecha-container span{
+    font-size: 2rem;
+}
+
+
+/* ------------FOOTER------------ */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: var(--color1);
+    border-top: 1px solid var(--color4);
+}
+
+.footer a{
+    cursor: pointer;
+    color: var(--color4);
+}
