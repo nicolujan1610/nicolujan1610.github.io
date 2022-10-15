@@ -19,7 +19,7 @@ function actualizarReloj(horaReloj, minutosReloj, segundosReloj){
     let gradosIniciales = 90;
 
     let hoursReloj = (gradosIniciales) + (horaReloj * degPerHour) + (minutos * 0.5);
-    
+
     agujaHora.style.transform = `rotate(${hoursReloj}deg)`;
     
     let mtsReloj = (gradosIniciales) + (minutosReloj * degPerMinute);
@@ -28,8 +28,6 @@ function actualizarReloj(horaReloj, minutosReloj, segundosReloj){
     let segReloj = (gradosIniciales) + (segundosReloj * degPerSecond);
     agujaSegundos.style.transform = `rotate(${(segReloj)}deg)`;
     
-
-
 }
 
 function actualizarTiempo(){
@@ -43,18 +41,7 @@ function actualizarTiempo(){
 
     actualizarReloj(horas, minutos, segundos);
 
-    fecha.innerHTML = `${date.getDate()} de ${mes} ${date.getFullYear()}`
-
-    // reloj.innerHTML = `
-    // ${horas
-    //     .toString()
-    //     .padStart(2,0)
-    // }:${minutos
-    //     .toString()
-    //     .padStart(2,0)
-    // }:${segundos
-    //     .toString()
-    //     .padStart(2,0)}`;    
+    fecha.innerHTML = `${date.getDate()} de ${mes} ${date.getFullYear()}` 
 }
 
 

@@ -89,8 +89,9 @@ body{
 	width: 200px;
 	border-radius: 50%;
 	margin-bottom: -100px;
-	background-image: url(img/nicolas.jpg);
-	background-size: cover;
+	background-image: url(img/nicolas.png);
+	background-position: center;
+	background-size: 240%;
 	z-index: 20;
 	outline: 6px solid rgba(255, 255, 255, .7);
 }
@@ -176,15 +177,15 @@ body{
 }
 
 .trabajos__clima{	
-	background-image: url(img/clima.png);
-	background-size: 90% 90%;
+	background-image: url(img/reloj.png);
+	background-size: 80% 80%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 .trabajos__axie{	
-	background-image: url(axiecount-app/img/loho.png);
-	background-size: 100% 100%;
+	background-image: url(proyects/axiecount-app/img/loho.png);
+	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 }

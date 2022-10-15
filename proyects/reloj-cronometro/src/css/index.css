@@ -144,15 +144,15 @@ a{
 }
 
 .main .reloj-circular-container .centro-agujas{
-    width: 32px;
-    height: 32px;
+    width:24px;
+    height: 24px;
     background-color: black;
     border-radius: 999px;
     z-index: 1000;
 }
 
 .main .fecha-container span{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
