@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 :root{
@@ -10,13 +9,14 @@
   --text-color: #ddd;
 }
 
-
 body{
   background-color: var(--background);
   color: var(--text-color);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 100vh;
 }
+
+/* ------- Header ------- */
 
 header{
   display: flex;
@@ -27,15 +27,19 @@ header{
   border-bottom: 1px solid var(--text-color);
 }
 
+.header-name{
+  display: flex;
+  justify-content: center;
+  width: calc(100%/3);
+}
 
 header ul{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
-  flex-grow: 1;
+  width: calc(100%/3);
   font-size: 20px;
-  gap: 2rem;
 }
 
 header ul li{
@@ -49,6 +53,7 @@ a{
 
 a:hover{
   text-decoration: underline;
+  transition: .5s;
 }
 
 .switch-mode-container{
@@ -56,11 +61,52 @@ a:hover{
   justify-content: center;
   align-items: center;
   height: 100%;
-  flex-grow: 1;
+  width: calc(100%/3);
+
 }
 
 .switch-mode-container i{
   font-size: 38px;
   cursor: pointer;
+}
+
+/* -------MAIN------- */
+
+.main-banner{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.main-banner div{
+  width: 100%;
+  font-size: 100px;
+}
+
+.main-banner .frontend{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 100px;
+  padding-right: 400px;
+  gap: 2rem;
+}
+
+.main-banner .frontend i{
+  color: #00D8FF;
+}
+
+.main-banner .developer{
+  display: flex;
+  justify-content: center;
+  padding-left: 400px;
+  gap: 2rem;
+  line-height: 100px;
+}
+
+.main-banner .developer i{
+  color: #F0DB4F;
 }
 
