@@ -204,3 +204,32 @@ a:hover{
   background-image: url('./src/instituto.png');
 }
 
+/* -----Contacto----- */
+
+.contacto{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  font-size: 24px;
+}
+
+.contacto-banner{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.contacto-banner a{
+  font-size: 80px;
+  line-height: 80px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contacto-banner a:hover{
+  opacity: 80%;
+}
