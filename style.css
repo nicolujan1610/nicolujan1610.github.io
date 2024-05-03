@@ -151,7 +151,7 @@ a:hover{
 
 .grid-proyectos{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   width: auto;
   height: 300px;
@@ -164,6 +164,43 @@ a:hover{
   align-items: center;
   text-align: center;
   width: 300px;
-  border: 1px solid white;
+  border: 2px solid var(--text-color);
+  border-radius: 20px;
   cursor: pointer;
 }
+
+.proyecto p{
+  opacity: 0;
+  background-color: #222;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyecto p:hover{
+  opacity: 90%;
+  transition: .5s;
+}
+
+
+.calculadora, .instituto{
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.calculadora{
+  background-image: url('./src/calculadora.jpeg');
+}
+
+.instituto{
+  background-size: 90%;
+  background-position: center;
+  background-image: url('./src/instituto.png');
+}
+
